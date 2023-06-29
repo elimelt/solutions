@@ -7,11 +7,11 @@ import java.util.HashMap;
 
 /* https://leetcode.com/problems/contains-duplicate-ii */
 
+/* https://leetcode.com/problems/contains-duplicate-iii */
+
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
-import LeetCode75.CostToHireKWorkers.Pair;
 
 public class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
@@ -57,5 +57,12 @@ public class ContainsDuplicate {
 
         return false;
 
+    }
+
+    class Pair {
+        private int k, v;
+        public Pair(int key, int val) { k = key; v = val;}
+        public int getKey() { return k; }
+        public int getValue() { return v; }
     }
 }
